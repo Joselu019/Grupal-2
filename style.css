@@ -1,27 +1,32 @@
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f0f4f8;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        min-height: 100vh;
-    }
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('img/7.png');
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}  
     
     .container {
-        background-color: white;
+        background-color: rgb(151, 135, 135);
         margin-top: 50px;
         padding: 30px;
         border-radius: 15px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         max-width: 500px;
         width: 90%;
+        
     }
     
     h1 {
         text-align: center;
-        color: #2c3e50;
+        color: #2b3846;
     }
     
     form {
@@ -42,11 +47,12 @@
         border-radius: 6px;
         border: 1px solid #ccc;
         font-size: 1rem;
+        cursor: pointer;
     }
     
     button {
         padding: 10px;
-        background-color: #34ac92;
+        background-color: #ca5c30;
         color: white;
         border: none;
         border-radius: 6px;
@@ -56,13 +62,13 @@
     }
     
     button:hover {
-        background-color: #288873;
+        background-color: #e28662;
     }
     
     #resultado {
         margin-top: 20px;
         padding: 10px;
-        background-color: #ecf0f1;
+        background-color:rgb(151, 135, 135);
         border-radius: 6px;
         font-weight: 500;
         color: #2c3e50;

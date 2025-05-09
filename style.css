@@ -1,32 +1,29 @@
-html, body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: url('img/7.png');
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-}  
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background: url('img/7.png') no-repeat center center fixed;
+        background-size: cover;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
     
     .container {
-        background-color: rgb(151, 135, 135);
-        margin-top: 50px;
+        background-color: rgb(188, 171, 190);
+        margin: 50px auto;
         padding: 30px;
         border-radius: 15px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         max-width: 500px;
         width: 90%;
-        
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
     
     h1 {
         text-align: center;
-        color: #2b3846;
+        color: #2c3e50;
     }
     
     form {
@@ -47,12 +44,11 @@ html, body {
         border-radius: 6px;
         border: 1px solid #ccc;
         font-size: 1rem;
-        cursor: pointer;
     }
     
     button {
         padding: 10px;
-        background-color: #ca5c30;
+        background-color: #eb7a4d;
         color: white;
         border: none;
         border-radius: 6px;
@@ -62,15 +58,74 @@ html, body {
     }
     
     button:hover {
-        background-color: #e28662;
+        background-color: #c0643f;
     }
     
     #resultado {
         margin-top: 20px;
         padding: 10px;
-        background-color:rgb(204, 195, 195);
+        background-color: #645868;
         border-radius: 6px;
         font-weight: 500;
-        color: #2c3e50;
+        color:white;
+    }
+    
+    /* =================== */
+    /* Modal de historial  */
+    /* =================== */
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.6);
+    }
+    
+    .modal-content {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 500px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        animation: fadeIn 0.3s ease-in-out;
+    }
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .close:hover {
+        color: #000;
+    }
+    
+    #listaHistorial {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+    }
+    
+    #listaHistorial li {
+        background: #f2f2f2;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 6px;
+        font-size: 0.95rem;
+    }
+    
+    /* Animación opcional */
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
     }
     

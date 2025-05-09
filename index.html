@@ -8,7 +8,7 @@
     </head>
     <body>
     <div class="container">
-        <h1>Gestor de Reservas Rurales</h1>
+        <h1>Reservas Rurales</h1>
 
         <form id="reserva-form">
         <label>Cliente: <input type="text" id="cliente" required /></label>
@@ -26,7 +26,18 @@
         <button type="submit">Calcular</button>
         </form>
 
+        <button id="abrirHistorial">Ver historial de reservas</button>
+
         <div id="resultado"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+        <span id="cerrarModal" class="close">&times;</span>
+        <h2>Historial de Reservas</h2>
+        <ul id="listaHistorial"></ul>
+        </div>
     </div>
 
     <script src="script.js"></script>
